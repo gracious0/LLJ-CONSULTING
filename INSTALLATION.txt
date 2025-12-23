@@ -1,0 +1,311 @@
+INSTALLATION & SETUP GUIDE
+==========================
+
+Quick Setup Instructions for LL&J Consulting Website
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STEP 1: OPEN THE WEBSITE
+═════════════════════════
+
+Location: c:\WEB\llj-consulting\
+
+Option A - Simplest (Just Double-Click):
+  1. Navigate to: c:\WEB\llj-consulting\
+  2. Double-click "index.html"
+  3. Website opens in your default browser
+
+Option B - Choose Your Browser:
+  1. Navigate to: c:\WEB\llj-consulting\
+  2. Right-click "index.html"
+  3. Select "Open with" → Choose your browser
+  4. Website opens
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STEP 2: EXPLORE THE WEBSITE
+═══════════════════════════
+
+Click on these navigation links:
+  • Home - Main page with hero and services
+  • About Us - Company information
+  • Services - Detailed service descriptions
+  • Contact - Contact form and map
+
+Test the contact form (displays success message)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STEP 3: TEST ON MOBILE
+═════════════════════
+
+1. Open website in browser
+2. Press "F12" on keyboard (or right-click → Inspect)
+3. Look for mobile device icon (or press Ctrl+Shift+M)
+4. Toggle device toolbar
+5. See how site looks on mobile
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STEP 4: CUSTOMIZE YOUR INFORMATION
+═══════════════════════════════════
+
+Find and Replace These:
+
+Phone Number:
+  Current: (505) 555-1234
+  Replace with: YOUR_PHONE_NUMBER
+  Files to update: All HTML files
+  
+Email Address:
+  Current: info@lljconsulting.com
+  Replace with: YOUR_EMAIL_ADDRESS
+  Files to update: All HTML files
+
+Address:
+  Current: 500 4th St NW, Suite 102, Albuquerque, NM 87102
+  Replace with: YOUR_ADDRESS
+  Files to update: All HTML files
+
+To find all instances:
+  1. Use Find & Replace in your text editor (Ctrl+H)
+  2. Search for old information
+  3. Replace with your information
+  4. Save all files
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STEP 5: CUSTOMIZE COLORS (OPTIONAL)
+════════════════════════════════════
+
+1. Open: assets/css/styles.css
+2. Find the section at the top:
+   :root {
+       --primary-dark: #1a3a52;
+       --accent-color: #0984e3;
+       ...
+   }
+
+3. Change the color codes:
+   --primary-dark: #1a3a52;     (Navy Blue - change this)
+   --accent-color: #0984e3;     (Accent Blue - change this)
+
+4. Save the file
+5. Refresh browser to see changes
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STEP 6: SET UP CONTACT FORM (OPTIONAL)
+═══════════════════════════════════════
+
+Currently: Form shows success message but doesn't send emails
+
+To enable email sending, choose ONE option:
+
+OPTION A - Formspree (Recommended - Easiest)
+═════════════════════════════════════════════
+1. Go to https://formspree.io
+2. Create free account
+3. Create a new form
+4. Copy your Form ID (example: abc123)
+5. Open contact.html in text editor
+6. Find: <form id="contactForm" class="contact-form">
+7. Replace with: <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+8. Paste your Form ID instead of YOUR_FORM_ID
+9. Save the file
+10. Test the contact form - emails now work!
+
+OPTION B - Netlify (Free Hosting)
+════════════════════════════════
+1. Go to https://netlify.com
+2. Sign up for free
+3. Drag and drop the llj-consulting folder
+4. Site goes live + forms work automatically!
+
+OPTION C - Your Own Email Service
+═════════════════════════════════
+1. Set up backend (server) for email
+2. Update assets/js/script.js
+3. Send form data to your email service
+(Advanced option)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STEP 7: DEPLOY WEBSITE (PUT ONLINE)
+═══════════════════════════════════
+
+OPTION 1 - Netlify (Easiest)
+════════════════════════════
+1. Go to https://netlify.com
+2. Create free account
+3. Drag & drop "llj-consulting" folder
+4. Get live URL
+5. Site is LIVE!
+
+OPTION 2 - GitHub Pages (Free)
+═══════════════════════════════
+1. Create GitHub account at github.com
+2. Create new repository
+3. Upload all files
+4. Enable GitHub Pages in settings
+5. Site goes live!
+
+OPTION 3 - Traditional Web Host
+════════════════════════════════
+1. Get hosting (GoDaddy, Bluehost, etc.)
+2. Get FTP access information
+3. Connect with FTP software
+4. Upload all files to web server
+5. Done!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROJECT STRUCTURE
+═════════════════
+
+llj-consulting/
+├── index.html              (Home Page)
+├── about.html              (About Us)
+├── services.html           (Services)
+├── contact.html            (Contact Form & Map)
+├── PROJECT_INDEX.html      (Overview page)
+├── README.md               (Full documentation)
+├── QUICKSTART.md           (Quick guide)
+├── PROJECT_SUMMARY.txt     (This summary)
+│
+└── assets/
+    ├── css/
+    │   └── styles.css      (All styling)
+    ├── js/
+    │   └── script.js       (All JavaScript)
+    └── images/             (Add your images here)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FILES INCLUDED
+══════════════
+
+✓ 4 HTML Pages (Home, About, Services, Contact)
+✓ 1 CSS File (929 lines of professional styling)
+✓ 1 JavaScript File (Mobile menu, form validation)
+✓ 4 Documentation files (Guides and references)
+✓ Image folder (Ready for your images)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FEATURES INCLUDED
+═════════════════
+
+✓ Responsive Design (desktop, tablet, mobile)
+✓ Professional Color Palette (navy, charcoal, blue)
+✓ Mobile Navigation Menu (hamburger)
+✓ Contact Form with Validation
+✓ Google Map Integration
+✓ Smooth Animations
+✓ SEO Optimization
+✓ Modern Typography
+✓ Testimonials Section
+✓ Services Overview
+✓ Company Information
+✓ Professional Footer
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TROUBLESHOOTING
+═══════════════
+
+PROBLEM: Links don't work
+SOLUTION: Ensure all .html files are in the same folder
+
+PROBLEM: Styling looks wrong
+SOLUTION: 
+  1. Make sure styles.css is in assets/css/
+  2. Clear browser cache (Ctrl+Shift+Delete)
+  3. Refresh page (Ctrl+R)
+
+PROBLEM: Mobile menu doesn't work
+SOLUTION:
+  1. Make sure script.js is in assets/js/
+  2. JavaScript might be disabled - check browser settings
+  3. Try a different browser
+
+PROBLEM: Contact form doesn't send emails
+SOLUTION:
+  1. Set up email integration (see Step 6 above)
+  2. Test on actual website (not local file)
+  3. Check spam folder for test emails
+
+═══════════════════════════════════════════════════════════════════════════════
+
+BROWSER SUPPORT
+═══════════════
+
+✓ Chrome (latest)
+✓ Firefox (latest)
+✓ Safari (latest)
+✓ Edge (latest)
+✓ Mobile browsers (iPhone, Android)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+NEXT STEPS
+══════════
+
+1. ☐ Open index.html and review content
+2. ☐ Customize company information
+3. ☐ Test on mobile device
+4. ☐ Set up contact form (if using Formspree/Netlify)
+5. ☐ Deploy to web hosting
+6. ☐ Test live website
+7. ☐ Submit to Google Search Console
+8. ☐ Share with your team
+9. ☐ Promote to clients
+
+═══════════════════════════════════════════════════════════════════════════════
+
+NEED HELP?
+══════════
+
+Documentation Files:
+  • README.md - Complete detailed guide
+  • QUICKSTART.md - Quick reference
+  • PROJECT_INDEX.html - Visual overview
+
+Questions About:
+  • HTML - Edit .html files directly
+  • CSS - Edit assets/css/styles.css
+  • JavaScript - Edit assets/js/script.js
+  • Deployment - See deployment section above
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CONTACT INFO IN WEBSITE
+═══════════════════════
+
+Current placeholder information:
+  Phone: (505) 555-1234
+  Email: info@lljconsulting.com
+  Address: 500 4th St NW, Suite 102, Albuquerque, NM 87102
+  Hours: Monday-Friday 9AM-5PM
+
+Update these in ALL HTML files!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+You're Ready to Go!
+═══════════════════
+
+Your professional LL&J Consulting website is complete and ready to use.
+
+START HERE: Open c:\WEB\llj-consulting\index.html
+
+Enjoy your new professional website! 🚀
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Questions? Check the documentation files or review the HTML/CSS code.
+All files are well-commented and easy to understand.
+
+Good luck with your consulting business!
+
+═══════════════════════════════════════════════════════════════════════════════
